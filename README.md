@@ -1,12 +1,20 @@
 # youtube-api-v3-search
 
+
+
 ### YouTube Search Google API for [Node.js](https://nodejs.org/en) and the Browser using
 
-* Search for YouTube videos, channels, playlists and live events via Google API for both [Node.js](https://nodejs.org/en) using [https](https://nodejs.org/api/https.html) and in the Browser using [XMLHttpRequests ](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+
+##### Search for YouTube videos, channels, playlists and live events via Google API
+
+
+
+* [Node.js](https://nodejs.org/en) using [https](https://nodejs.org/api/https.html) and in the Browser using [XMLHttpRequests ](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 
 * Super light no third-party libraries
 * Supports the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) API
 
+-----------------
 
 Installing
 ==========
@@ -25,6 +33,8 @@ Using cdn:
  <script src=""></script>
  ```
 
+-----------------
+
 Example Usage
 =============
 
@@ -35,7 +45,55 @@ Example Usage
 const youtubeSearch = require('youtube-api-v3-search');
 
 ```
-**Set Search Options**
+
+-----------------
+
+
+
+## Callbacks
+
+
+
+```js
+youtubeSearch($YOUTUBE_KEY,$options,callback);
+```
+* **youtubeSearch:: _[Function]_**  _return void_
+
+* **$YOUTUBE_KEY::  *[Stirng]***  _youtube api-key_
+
+* **$options:: _[Object]_**  _search parameters_
+
+
+* **callback:: _[Function]_** _function(error , result )_
+
+-----------------
+
+
+## Promises
+
+
+__Just don't callback and you'll get a Promise :)__
+
+
+```js
+
+// NOT passing callback as the 3rd argument it returns Promise
+
+youtubeSearch($YOUTUBE_KEY,$options);
+```
+* **youtubeSearch:: _[Function]_** _return Promise_
+
+* **$YOUTUBE_KEY:: *[Stirng]*** _youtube api-key_
+
+* **$options:: _[Object]_** _search parameters_
+
+
+-----------------
+
+## Options
+#### [options/parameters]
+
+**Search Options**
 
 _The **q** parameter specifies the query term to search for._
 
@@ -49,6 +107,9 @@ _Acceptable values are:_
 * _playlist_
 * _video_
 
+
+#### Example
+
 ```js
 
 const options = {
@@ -57,37 +118,6 @@ const options = {
   type:'video'
 }
 ```
------------------
 
-## Callbacks
 
-```js
-youtubeSearch($YOUTUBE_KEY,$options,callback);
-```
-* **youtubeSearch _[Function]_**  _return void_
-
-* **$YOUTUBE_KEY *[Stirng]***  _youtube api-key_
-
-* **$options _[Object]_**  _search parameters_
-
-### Options [options/parameters]
 #### [YouTube API Reference Search#parameters](https://developers.google.com/youtube/v3/docs/search/list#parameters)
-
-
-**callback _[Function]_** _function(error , result )_
-
-## Promises
-
-__Just don't callback and you'll get a Promise :)__
-
-```js
-
-// NOT passing callback as the 3rd argument it returns Promise
-
-youtubeSearch($YOUTUBE_KEY,$options);
-```
-* **youtubeSearch _[Function]_** _return Promise_
-
-* **$YOUTUBE_KEY *[Stirng]*** _youtube api-key_
-
-* **$options _[Object]_** _search parameters_

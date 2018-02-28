@@ -59,32 +59,35 @@ const options = {
 ```
 -----------------
 
-## Using callback
+## Callbacks
 
 ```js
 youtubeSearch($YOUTUBE_KEY,$options,callback);
 ```
-**youtubeSearch _[Function]_**  _return void_
+* **youtubeSearch _[Function]_**  _return void_
 
-**$YOUTUBE_KEY *[Stirng]*** _your youtube api-key_
+* **$YOUTUBE_KEY *[Stirng]***  _youtube api-key_
 
-**$options _[Object]_**  _your search parameters_
+* **$options _[Object]_**  _search parameters_
 
-### All possible [options/parameters]
+### Options [options/parameters]
+#### [YouTube API Reference Search#parameters](https://developers.google.com/youtube/v3/docs/search/list#parameters)
 
-`https://developers.google.com/youtube/v3/docs/search/list#parameters`
 
 **callback _[Function]_** _function(error , result )_
 
-## Using Promise
+## Promises
+
+__Just don't callback and you'll get a Promise :)__
 
 ```js
 
-// without passing callback as the third argument it returns [Promise]
+// NOT passing callback as the 3rd argument it returns Promise
+
 youtubeSearch($YOUTUBE_KEY,$options);
 ```
-**youtubeSearch _[Function]_** _return Promise_
+* **youtubeSearch _[Function]_** _return Promise_
 
-**$YOUTUBE_KEY *[Stirng]*** _your youtube api-key_
+* **$YOUTUBE_KEY *[Stirng]*** _youtube api-key_
 
-**$options _[Object]_** _your search parameters_
+* **$options _[Object]_** _search parameters_

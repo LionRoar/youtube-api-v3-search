@@ -1,6 +1,7 @@
 # youtube-api-v3-search
 
 
+[![Build Status](https://travis-ci.org/LionRoar/youtube-api-v3-search.svg?branch=master)](https://travis-ci.org/LionRoar/youtube-api-v3-search)
 
 ### YouTube Search Google API for [Node.js](https://nodejs.org/en) and the Browser using
 

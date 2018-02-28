@@ -13,16 +13,19 @@ Installing
 
 Using npm:
 
-`$ npm install youtube-api-v3-search`
+```bash
+$ npm install youtube-api-v3-search
+```
 
 Using cdn:
 
-`<script src=""></script>`
+```html
+ <script src=""></script>```
 
 Example Usage
 =============
 
-```
+```js
 //Using Node
 
 const youtubeSearch = require('youtube-api-v3-search');
@@ -42,39 +45,40 @@ _Acceptable values are:_
 * _playlist_
 * _video_
 
-```
+```js
 const options = {
   q:'nodejs',
   part:'snippet',
   type:'video'
 }
 ```
-Using callback
-===============
+-----------------
 
-```
+## Using callback
+
+```js
 youtubeSearch($YOUTUBE_KEY,$options,callback);
 ```
-** youtubeSearch _[Function]_***  _return void_
+**youtubeSearch _[Function]_***  _return void_
 
-** $YOUTUBE_KEY *[Stirng]* ** _your youtube api-key_
+**$YOUTUBE_KEY *[Stirng]* ** _your youtube api-key_
 
-** $options _[Object]_ ** _your search parameters_
+**$options _[Object]_ **  _your search parameters_
 
 ### All possible [options/parameters]
 `https://developers.google.com/youtube/v3/docs/search/list#parameters`
 
 **callback _[Function]_** _function(error , result )_
 
-Using Promise
-==============
-```
+## Using Promise
+
+```js
 // without passing callback as the third argument it returns [Promise]
 
 youtubeSearch($YOUTUBE_KEY,$options);
 ```
-** youtubeSearch _[Function]_** _return Promise_
+**youtubeSearch _[Function]_** _return Promise_
 
-** $YOUTUBE_KEY *[Stirng]* ** _your youtube api-key_
+**$YOUTUBE_KEY *[Stirng]* ** _your youtube api-key_
 
-** $options _[Object]_ ** _your search parameters_
+**$options _[Object]_ ** _your search parameters_

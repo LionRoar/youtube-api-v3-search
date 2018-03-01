@@ -1,11 +1,11 @@
 {
   "name": "youtube-api-v3-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": " Searching YouTube with the YouTube Data API v3",
   "main": "index.js",
   "scripts": {
-     "test": "nyc mocha",
-     "test:r:html":"nyc --reporter=html mocha"
+    "test": "nyc mocha",
+    "test:r:html": "nyc --reporter=html mocha"
   },
   "repository": {
     "type": "git",

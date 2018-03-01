@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/LionRoar/youtube-api-v3-search.svg?branch=master)](https://travis-ci.org/LionRoar/youtube-api-v3-search)
 
-### YouTube Search Google API for [Node.js](https://nodejs.org/en) and the Browser using
+### YouTube Search Google API for [Node.js](https://nodejs.org/en) and Browser
 
 
 ##### Search for YouTube videos, channels, playlists and live events via Google API

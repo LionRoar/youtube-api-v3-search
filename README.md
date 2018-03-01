@@ -56,16 +56,17 @@ const youtubeSearch = require('youtube-api-v3-search');
 
 
 ```js
+
+/**
+ * Searching YouTube.
+ * @param {string} $YOUTUBE_KEY youtube api-key
+ * @param {Object} $options search parameters.
+ * @param {function} callback( @param error , @param result).  
+ * @return {void}
+ */
+
 youtubeSearch($YOUTUBE_KEY,$options,callback);
 ```
-* **youtubeSearch:: _[Function]_**  _return void_
-
-* **$YOUTUBE_KEY::  *[Stirng]***  _youtube api-key_
-
-* **$options:: _[Object]_**  _search parameters_
-
-
-* **callback:: _[Function]_** _function(error , result )_
 
 -----------------
 
@@ -79,16 +80,15 @@ __Just don't callback and you'll get a Promise :)__
 ```js
 
 // NOT passing callback as the 3rd argument it returns Promise
+/**
+ * Searching YouTube.
+ * @param {string} $YOUTUBE_KEY youtube api-key
+ * @param {Object} $options search parameters.
+ * @return {Promise} The result of the search .
+ */
 
 youtubeSearch($YOUTUBE_KEY,$options);
 ```
-* **youtubeSearch:: _[Function]_** _return Promise_
-
-* **$YOUTUBE_KEY:: *[Stirng]*** _youtube api-key_
-
-* **$options:: _[Object]_** _search parameters_
-
-
 -----------------
 
 ## Options

@@ -84,6 +84,14 @@ youtubeSearch($YOUTUBE_KEY,$options,callback);
 youtubeSearch($YOUTUBE_KEY,$options);
 ```
 
+## Async/Await
+
+```JS
+async () => {
+  let result = await youtubeSearch($YOUTUBE_KEY,options);
+}
+```
+
 -----------------
 
 ## Options

@@ -1,6 +1,6 @@
 
 const config = require('./config');
-const querystring = require('./querystring');
+const querystring = require('querystring');
 
 
 module.exports = function(request, key, options, cb){

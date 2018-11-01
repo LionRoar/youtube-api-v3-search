@@ -67,7 +67,7 @@ import searchYoutube from 'youtube-api-v3-search';
  * @return {void}
  */
 
-youtubeSearch($YOUTUBE_KEY,$options,callback);
+searchYoutube($YOUTUBE_KEY,$options,callback);
 ```
 
 -----------------
@@ -84,14 +84,14 @@ youtubeSearch($YOUTUBE_KEY,$options,callback);
  * @return {Promise} The result of the search .
  */
 
-youtubeSearch($YOUTUBE_KEY,$options);
+searchYoutube($YOUTUBE_KEY,$options);
 ```
 
 ## Async/Await
 
 ```js
 async () => {
-  let result = await youtubeSearch($YOUTUBE_KEY,options);
+  let result = await searchYoutube($YOUTUBE_KEY,options);
 }
 ```
 

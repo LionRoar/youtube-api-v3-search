@@ -29,7 +29,10 @@ Using cdn:
 
 ```html
 
- <script src="https://unpkg.com/youtube-api-v3-search@1.0.0/dist/youtube-api-v3-search.min.js"></script>
+
+ <script src="https://unpkg.com/youtube-api-v3-search@1.1.2/dist/youtube-api-v3-search.min.js"></script>
+
+
  ```
 
 -----------------
@@ -86,7 +89,7 @@ youtubeSearch($YOUTUBE_KEY,$options);
 
 ## Async/Await
 
-```JS
+```js
 async () => {
   let result = await youtubeSearch($YOUTUBE_KEY,options);
 }

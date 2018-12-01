@@ -30,7 +30,7 @@ Using cdn:
 ```html
 
 
- <script src="https://unpkg.com/youtube-api-v3-search@1.1.4/dist/youtube-api-v3-search.min.js"></script>
+ <script src="https://unpkg.com/youtube-api-v3-search@1.1.5/dist/youtube-api-v3-search.min.js"></script>
 
 
  ```

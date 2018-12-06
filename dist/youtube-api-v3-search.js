@@ -83,6 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 var request = __webpack_require__(1);
 var common = __webpack_require__(2);
 module.exports = function (key, options, cb) {
+  console.log('browserJS');
   return common(request, key, options, cb);
 };
 

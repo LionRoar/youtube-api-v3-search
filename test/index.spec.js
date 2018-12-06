@@ -1,4 +1,4 @@
-const youtubeSearch = require('../src/index');
+const searchYoutube = require('../src');
 const assert = require('assert');
 
 require('dotenv').config();
@@ -11,7 +11,7 @@ describe('Search The Youtube Api',function(){
     type:'video'
   }
   it('should return a Response object using a callback',function(done){
-      youtubeSearch(process.env.YOUTUBE_KEY,options,function(err, result){
+      searchYoutube(process.env.YOUTUBE_KEY,options,function(err, result){
         //result.kind: 'youtube#searchListResponse'
         if(err) done(err);
         assert.deepEqual(result.kind,'youtube#searchListResponse');
@@ -21,7 +21,7 @@ describe('Search The Youtube Api',function(){
 
   it('should return a Response object using a Promise',function(done){
 
-      youtubeSearch(process.env.YOUTUBE_KEY,options)
+      searchYoutube(process.env.YOUTUBE_KEY,options)
       .then(result => {
         assert.deepEqual(result.kind,'youtube#searchListResponse');
         done();
@@ -30,20 +30,20 @@ describe('Search The Youtube Api',function(){
   });
 
   it('should Throw API Key is required! using callback',function(done){
-    youtubeSearch(null,null,(err,res)=>{
-      assert.deepStrictEqual(err,new Error('API Key is required'),'did not throw API Key is required message')
+    searchYoutube(null,null,(err,res)=>{
+      assert.equal(err.message, 'API Key is required','did not throw API Key is required message')
       done();
     });
   });
 
 
   it('should Throw API Key is required! using Promise',function(done){
-      assert.throws(youtubeSearch,/API Key is required/,'did not throw API Key is required message');
+      assert.throws(searchYoutube,/API Key is required/,'did not throw API Key is required message');
       done();
   });
 
   it('should return a response #Async' , async () => {
-        let result = await youtubeSearch(process.env.YOUTUBE_KEY,options);
+        let result = await searchYoutube(process.env.YOUTUBE_KEY,options);
         assert.deepEqual(result.kind,'youtube#searchListResponse');
   })
 });

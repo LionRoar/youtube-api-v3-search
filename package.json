@@ -1,6 +1,6 @@
 {
   "name": "youtube-api-v3-search",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": " Searching YouTube with the YouTube Data API v3",
   "main": "./src/index.js",
   "scripts": {

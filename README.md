@@ -8,8 +8,8 @@
 
 * [Node.js](https://nodejs.org/en) using [https](https://nodejs.org/api/https.html) and in the Browser using [XMLHttpRequests](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 
-* Super light no third-party libraries
-* Supports the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) API
+* <del>Super light no third-party libraries</del> **Added** [browser-resolve](https://www.npmjs.com/package/browser-resolve) for performance.
+* Supports the [Prmise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) API
 
 * Thanks to @MaximVanhove for adding Support for CommonJS, AMD and global variable.
 
@@ -30,7 +30,7 @@ Using cdn:
 ```html
 
 
- <script src="https://unpkg.com/youtube-api-v3-search@1.1.5/dist/youtube-api-v3-search.min.js"></script>
+ <script src="https://unpkg.com/youtube-api-v3-search@1.2.1/dist/youtube-api-v3-search.min.js"></script>
 
 
  ```

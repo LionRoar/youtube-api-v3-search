@@ -12,7 +12,8 @@
     "test:browser:o": "karma start --single-run --browsers Chrome karma.conf.js"
   },
   "browser": {
-    "./src/index.js": "./src/browser.js"
+    "./src/index.js": "./src/browser.js",
+    "querystring":"query-string"
   },
   "repository": {
     "type": "git",
@@ -56,6 +57,7 @@
     "webpack": "^3.11.0"
   },
   "dependencies": {
-    "browser-resolve": "^1.11.3"
+    "browser-resolve": "^1.11.3",
+    "query-string": "^5.1.1"
   }
 }
